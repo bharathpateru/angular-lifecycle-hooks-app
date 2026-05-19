@@ -1,0 +1,14 @@
+
+<h2>Parent Component</h2>
+
+<button (click)="changeMessage()">Change Message</button>
+<button (click)="destroyChild()">Destroy Child</button>
+
+<br><br>
+
+<app-child *ngIf="showChild" [message]="message">
+  <p>This is projected content</p>
+</app-child>
+
+<br>
+<router-outlet></router-outlet>
